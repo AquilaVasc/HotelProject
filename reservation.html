@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Reservation Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <script src="js/main.js"></script>
+    <script src="./js/jquery-3-3-1.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="hotel.html">Hotel</a></li>
+                <li><a href="reservation.html">Make a reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="">
+        <div class="form-line container">
+            <label for="">
+                <p>Name</p>
+                <input type="text" name="name">
+            </label>
+            <label for="">
+                <p>CPF</p>
+                <input type="text" name="cpf">
+            </label>
+            <label for="">
+                <p>Phone</p>
+                <input type="number" name="phone">
+            </label>
+        </div>
+        <div class="form-line container">
+            <label for="">
+                <p>Email</p>
+                <input type="email" name="email">
+            </label>
+            <label for="">
+                <p>Entry Date</p>
+                <input type="date" name="entryDate" id="">
+            </label>
+            <label for="">
+                <p>Leave Date</p>
+                <input type="date" name="leaveDate" id="">
+            </label>
+        </div>
+        <div class="form-line container">
+            <label for="range-count">
+                <p>Quantity of People</p>
+                <input type="range" name="peopleQuant" id="range-count" list="countPeople" min="1" max="4">
+                <datalist id="countPeople">
+                    <option value="1" label="1"></option>
+                    <option value="2" label="2"></option>
+                    <option value="3" label="3"></option>
+                    <option value="4" label="4"></option>
+                </datalist>
+            </label>
+            <label>
+                <p>Type of payment</p>
+                Card:<input type="radio" name="card" id=""> Cache<input type="radio" name="cache">
+            </label>
+            <label for="">
+                <p>Type of room</p>
+                <select name="roomType" id="">
+                    <option value="luxo">Luxo</option>
+                    <option value="premium">Premium</option>
+                    <option value="presidential">Presidential</option>
+                </select>
+            </label>
+        </div>
+    </form>
+</body>
+</html>
